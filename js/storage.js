@@ -14,13 +14,23 @@ export function restoreCart(products) {
   try {
     parsed = JSON.parse(saved);
   } catch {
-    discardSavedCart();
-    return { cart: new Map(), warning: "El carrito guardado estaba dañado y se inició uno vacío." };
+    const discarded = discardSavedCart();
+    return {
+      cart: new Map(),
+      warning: discarded
+        ? "El carrito guardado estaba dañado y se inició uno vacío."
+        : "El carrito guardado estaba dañado y se inició uno vacío, pero no se pudo borrar del almacenamiento."
+    };
   }
 
   if (!Array.isArray(parsed)) {
-    discardSavedCart();
-    return { cart: new Map(), warning: "El carrito guardado tenía un formato inválido y se inició uno vacío." };
+    const discarded = discardSavedCart();
+    return {
+      cart: new Map(),
+      warning: discarded
+        ? "El carrito guardado tenía un formato inválido y se inició uno vacío."
+        : "El carrito guardado tenía un formato inválido y se inició uno vacío, pero no se pudo borrar del almacenamiento."
+    };
   }
 
   const productById = new Map(products.map((product) => [product.id, product]));
@@ -71,7 +81,8 @@ export function saveCart(cart) {
 function discardSavedCart() {
   try {
     localStorage.removeItem(STORAGE_KEY);
+    return true;
   } catch {
-    return;
+    return false;
   }
 }
