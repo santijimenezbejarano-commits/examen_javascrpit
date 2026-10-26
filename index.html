@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Consulta productos y prepara tu pedido en TecnoStock.">
+    <title>TecnoStock | Tecnología para todos</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script type="module" src="./js/app.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-content">
+        <a class="brand" href="./" aria-label="TecnoStock, inicio">
+          <span class="brand-mark" aria-hidden="true">T</span>
+          <span>
+            <strong>TecnoStock</strong>
+            <small>Tecnología para todos</small>
+          </span>
+        </a>
+        <a class="cart-shortcut" href="#carrito">
+          Mi carrito <span id="header-units" class="unit-badge" aria-live="polite">0</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="page-content">
+      <section class="intro">
+        <div>
+          <p class="eyebrow">Tienda de tecnología</p>
+          <h1>Encuentra lo que necesitas</h1>
+          <p>Explora nuestro catálogo y prepara tu pedido de forma sencilla.</p>
+        </div>
+        <div class="shipping-note">
+          <span aria-hidden="true">✦</span>
+          <span>10 % de descuento desde <strong>$300.000</strong></span>
+        </div>
+      </section>
+
+      <div id="app-message" class="app-message" role="status" aria-live="polite" hidden></div>
+
+      <div class="shop-layout">
+        <section class="catalog-section" aria-labelledby="catalog-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Nuestros productos</p>
+              <h2 id="catalog-title">Catálogo</h2>
+            </div>
+            <span id="product-count" class="result-count"></span>
+          </div>
+
+          <form id="filters" class="filters" role="search">
+            <div class="search-field">
+              <label for="search">Buscar productos</label>
+              <input id="search" name="search" type="search" placeholder="Nombre o descripción">
+            </div>
+            <div class="filter-field">
+              <label for="category">Categoría</label>
+              <select id="category" name="category">
+                <option value="">Todas las categorías</option>
+              </select>
+            </div>
+            <div class="filter-field">
+              <label for="sort">Ordenar por precio</label>
+              <select id="sort" name="sort">
+                <option value="default">Recomendados</option>
+                <option value="asc">Menor a mayor</option>
+                <option value="desc">Mayor a menor</option>
+              </select>
+            </div>
+            <label class="availability-filter">
+              <input id="available-only" type="checkbox">
+              <span>Solo disponibles</span>
+            </label>
+            <button id="clear-filters" class="button button-quiet" type="button">Limpiar filtros</button>
+          </form>
+
+          <div id="catalog-loading" class="loading-state" role="status">
+            <span class="spinner" aria-hidden="true"></span>
+            <span>Cargando catálogo…</span>
+          </div>
+          <div id="catalog-error" class="catalog-error" role="alert" hidden>
+            <p id="catalog-error-text"></p>
+            <button id="retry-catalog" class="button button-secondary" type="button">Reintentar</button>
+          </div>
+          <product-list id="product-list"></product-list>
+        </section>
+
+        <aside id="carrito" class="cart-panel" aria-labelledby="cart-title">
+          <div class="section-heading cart-heading">
+            <div>
+              <p class="eyebrow">Tu selección</p>
+              <h2 id="cart-title">Mi carrito</h2>
+            </div>
+            <span id="cart-unit-count" class="result-count">0 unidades</span>
+          </div>
+          <shopping-cart id="shopping-cart"></shopping-cart>
+        </aside>
+      </div>
+
+      <section class="order-summary" aria-labelledby="summary-title">
+        <div>
+          <p class="eyebrow">Antes de continuar</p>
+          <h2 id="summary-title">Resumen del pedido</h2>
+          <p>El descuento se aplica automáticamente cuando tu compra alcanza $300.000 COP.</p>
+        </div>
+        <dl class="summary-values">
+          <div><dt>Unidades</dt><dd id="summary-units">0</dd></div>
+          <div><dt>Subtotal</dt><dd id="summary-subtotal">$0</dd></div>
+          <div><dt>Descuento</dt><dd id="summary-discount">$0</dd></div>
+          <div class="summary-total"><dt>Total</dt><dd id="summary-total">$0</dd></div>
+        </dl>
+        <button id="confirm-order" class="button button-primary confirm-button" type="button">Confirmar pedido</button>
+      </section>
+    </main>
+
+    <dialog id="order-dialog" class="order-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-content">
+        <button id="close-dialog" class="dialog-close" type="button" aria-label="Cerrar resumen">×</button>
+        <p class="eyebrow">Pedido simulado</p>
+        <h2 id="dialog-title">Resumen de confirmación</h2>
+        <div id="order-confirmation" class="order-confirmation"></div>
+        <p class="dialog-disclaimer">Esta es una simulación local. No se ha realizado ningún pago ni se ha actualizado el inventario.</p>
+      </div>
+    </dialog>
+
+    <footer class="site-footer">
+      <p>TecnoStock · Catálogo y pedidos de demostración</p>
+    </footer>
+  </body>
+</html>
