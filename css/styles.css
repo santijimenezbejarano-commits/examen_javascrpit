@@ -48,7 +48,7 @@ button:focus-visible,
 a:focus-visible,
 input:focus-visible,
 select:focus-visible {
-  outline: 3px solid rgb(8 126 120 / 30%);
+  outline: 3px solid rgb(37 99 235 / 30%);
   outline-offset: 2px;
 }
 
@@ -85,9 +85,9 @@ select:focus-visible {
   height: 42px;
   place-items: center;
   border-radius: 13px;
-  background: var(--teal);
+  background: var(--accent);
   color: white;
-  font-family: "Manrope", sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   font-size: 23px;
   font-weight: 800;
 }
@@ -98,7 +98,7 @@ select:focus-visible {
 }
 
 .brand strong {
-  font-family: "Manrope", sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   font-size: 17px;
   letter-spacing: -0.04em;
 }
@@ -126,8 +126,8 @@ select:focus-visible {
   place-items: center;
   padding: 0 7px;
   border-radius: 20px;
-  background: var(--teal-soft);
-  color: var(--teal-dark);
+  background: var(--accent-soft);
+  color: var(--accent-dark);
   font-size: 12px;
 }
 
@@ -146,7 +146,7 @@ select:focus-visible {
 
 .eyebrow {
   margin: 0 0 7px;
-  color: var(--teal);
+  color: var(--accent-dark);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.11em;
@@ -163,7 +163,7 @@ p {
 h1,
 h2,
 h3 {
-  font-family: "Manrope", sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
 h1 {
@@ -184,16 +184,16 @@ h1 {
   align-items: center;
   gap: 10px;
   padding: 13px 16px;
-  border: 1px solid #f2e2ca;
+  border: 1px solid #dbe5f3;
   border-radius: 12px;
-  background: #fffaf2;
-  color: #76552a;
+  background: #f3f7fd;
+  color: #334155;
   font-size: 12px;
   white-space: nowrap;
 }
 
 .shipping-note > span:first-child {
-  color: #d98b2e;
+  color: var(--accent);
   font-size: 19px;
 }
 
@@ -259,7 +259,7 @@ h1 {
 
 .search-field label,
 .filter-field label {
-  color: #52656d;
+  color: #475569;
   font-size: 11px;
   font-weight: 700;
 }
@@ -281,14 +281,14 @@ h1 {
   min-height: 40px;
   align-items: center;
   gap: 8px;
-  color: #52656d;
+  color: #475569;
   font-size: 12px;
 }
 
 .availability-filter input {
   width: 16px;
   height: 16px;
-  accent-color: var(--teal);
+  accent-color: var(--accent);
 }
 
 .button {
