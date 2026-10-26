@@ -1,19 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap");
-
 :root {
   color-scheme: light;
-  --ink: #172b35;
-  --muted: #687982;
-  --line: #e1e8e8;
+  --ink: #1e293b;
+  --muted: #64748b;
+  --line: #dbe2ea;
   --paper: #ffffff;
-  --canvas: #f4f7f6;
-  --teal: #087e78;
-  --teal-dark: #066660;
-  --teal-soft: #e6f5f2;
-  --orange: #f1a44b;
+  --canvas: #f1f4f8;
+  --accent: #2563eb;
+  --accent-dark: #1d4ed8;
+  --accent-soft: #eaf1ff;
   --danger: #a43d32;
-  --shadow: 0 12px 34px rgb(23 43 53 / 6%);
-  font-family: "DM Sans", sans-serif;
+  --shadow: 0 12px 34px rgb(30 41 59 / 7%);
+  font-family: "Segoe UI", Arial, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
@@ -27,6 +24,11 @@ body {
   min-width: 320px;
   background: var(--canvas);
   color: var(--ink);
+}
+
+product-list,
+shopping-cart {
+  display: block;
 }
 
 button,
