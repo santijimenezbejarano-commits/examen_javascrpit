@@ -694,14 +694,14 @@ h1 {
   border: 1px solid var(--line);
   border-radius: 11px;
   background: white;
-  box-shadow: 0 10px 30px rgb(23 43 53 / 13%);
+  box-shadow: 0 10px 30px rgb(30 41 59 / 14%);
   font-size: 12px;
   line-height: 1.5;
 }
 
 .app-message.success {
-  border-color: #b8dbd1;
-  color: #176758;
+  border-color: #bfd0ef;
+  color: #1d4ed8;
 }
 
 .app-message.error {
@@ -710,8 +710,8 @@ h1 {
 }
 
 .app-message.warning {
-  border-color: #ead7b9;
-  color: #76552a;
+  border-color: #cbd5e1;
+  color: #475569;
 }
 
 .order-dialog {
@@ -721,11 +721,11 @@ h1 {
   border: 0;
   border-radius: 17px;
   color: var(--ink);
-  box-shadow: 0 24px 80px rgb(14 32 38 / 24%);
+  box-shadow: 0 24px 80px rgb(15 23 42 / 24%);
 }
 
 .order-dialog::backdrop {
-  background: rgb(17 35 41 / 55%);
+  background: rgb(15 23 42 / 58%);
   backdrop-filter: blur(3px);
 }
 
@@ -756,7 +756,7 @@ h1 {
 
 .confirmation-message {
   margin-bottom: 5px;
-  color: var(--teal-dark);
+  color: var(--accent-dark);
   font-size: 14px;
   font-weight: 700;
 }
@@ -779,7 +779,7 @@ h1 {
 }
 
 .order-lines li {
-  color: #52656d;
+  color: #475569;
   font-size: 11px;
   line-height: 1.5;
 }
@@ -805,7 +805,7 @@ h1 {
   margin: 18px 0 0;
   padding: 11px 12px;
   border-radius: 9px;
-  background: #f6f8f7;
+  background: #f1f4f8;
   color: var(--muted);
   font-size: 10px;
   line-height: 1.5;
