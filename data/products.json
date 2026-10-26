@@ -1,0 +1,119 @@
+[
+  {
+    "id": 101,
+    "name": "Teclado mecánico",
+    "category": "Periféricos",
+    "price": 189900,
+    "stock": 8,
+    "description": "Teclado USB para uso diario con teclas de respuesta precisa.",
+    "active": true
+  },
+  {
+    "id": 102,
+    "name": "Mouse inalámbrico",
+    "category": "Periféricos",
+    "price": 74900,
+    "stock": 15,
+    "description": "Mouse óptico inalámbrico ergonómico para oficina y hogar.",
+    "active": true
+  },
+  {
+    "id": 103,
+    "name": "Audífonos USB",
+    "category": "Periféricos",
+    "price": 129900,
+    "stock": 0,
+    "description": "Audífonos con micrófono integrado para videollamadas.",
+    "active": true
+  },
+  {
+    "id": 104,
+    "name": "Teclado compacto",
+    "category": "Periféricos",
+    "price": 99900,
+    "stock": 6,
+    "description": "Teclado compacto con conexión USB y distribución en español.",
+    "active": false
+  },
+  {
+    "id": 201,
+    "name": "Cable USB-C trenzado",
+    "category": "Accesorios",
+    "price": 29900,
+    "stock": 24,
+    "description": "Cable USB-C resistente para carga y transferencia de datos.",
+    "active": true
+  },
+  {
+    "id": 202,
+    "name": "Hub USB de 4 puertos",
+    "category": "Accesorios",
+    "price": 59900,
+    "stock": 10,
+    "description": "Expande la conectividad de tu computador con cuatro puertos USB.",
+    "active": true
+  },
+  {
+    "id": 203,
+    "name": "Base para portátil",
+    "category": "Accesorios",
+    "price": 89900,
+    "stock": 7,
+    "description": "Base ajustable para mejorar la postura y ventilación del portátil.",
+    "active": true
+  },
+  {
+    "id": 204,
+    "name": "Adaptador HDMI",
+    "category": "Accesorios",
+    "price": 44900,
+    "stock": 0,
+    "description": "Adaptador compacto para conectar equipos con salida USB-C a HDMI.",
+    "active": true
+  },
+  {
+    "id": 301,
+    "name": "Memoria USB 64 GB",
+    "category": "Almacenamiento",
+    "price": 39900,
+    "stock": 18,
+    "description": "Memoria USB portátil de 64 GB para guardar documentos y archivos.",
+    "active": true
+  },
+  {
+    "id": 302,
+    "name": "Disco externo 1 TB",
+    "category": "Almacenamiento",
+    "price": 279900,
+    "stock": 5,
+    "description": "Disco externo portátil de 1 TB con conexión USB 3.0.",
+    "active": true
+  },
+  {
+    "id": 303,
+    "name": "Tarjeta microSD 128 GB",
+    "category": "Almacenamiento",
+    "price": 64900,
+    "stock": 12,
+    "description": "Tarjeta microSD de alta capacidad para dispositivos compatibles.",
+    "active": true
+  },
+  {
+    "id": 401,
+    "name": "Tóner negro",
+    "category": "Suministros",
+    "price": 159900,
+    "stock": 4,
+    "description": "Tóner negro de alto rendimiento para impresoras láser compatibles.",
+    "active": true
+  },
+  {
+    "id": 402,
+    "name": "Papel carta resma",
+    "category": "Suministros",
+    "price": 24900,
+    "stock": 30,
+    "description": "Resma de 500 hojas de papel tamaño carta para impresión diaria.",
+    "active": true
+  }
+]
