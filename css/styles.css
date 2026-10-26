@@ -317,27 +317,27 @@ h1 {
 .button-quiet {
   border-color: var(--line);
   background: white;
-  color: #55676f;
+  color: #475569;
 }
 
 .button-quiet:hover:not(:disabled) {
-  border-color: #b8cbca;
-  background: #f9fbfa;
+  border-color: #b8c5d6;
+  background: #f8fafc;
 }
 
 .button-primary {
-  background: var(--teal);
+  background: var(--accent);
   color: white;
 }
 
 .button-primary:hover:not(:disabled) {
-  background: var(--teal-dark);
+  background: var(--accent-dark);
 }
 
 .button-secondary {
-  border-color: #bbd9d4;
-  background: var(--teal-soft);
-  color: var(--teal-dark);
+  border-color: #bfd0ef;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
 }
 
 .loading-state,
@@ -358,8 +358,8 @@ h1 {
 .spinner {
   width: 17px;
   height: 17px;
-  border: 2px solid #dcebe8;
-  border-top-color: var(--teal);
+  border: 2px solid #dce3ec;
+  border-top-color: var(--accent);
   border-radius: 50%;
   animation: spin 700ms linear infinite;
 }
@@ -401,16 +401,16 @@ h1 {
 
 .product-card:hover {
   transform: translateY(-2px);
-  border-color: #c2dad6;
-  box-shadow: 0 8px 22px rgb(23 43 53 / 6%);
+  border-color: #c3d2e8;
+  box-shadow: 0 8px 22px rgb(30 41 59 / 7%);
 }
 
 .product-category {
   align-self: flex-start;
   padding: 4px 8px;
   border-radius: 20px;
-  background: var(--teal-soft);
-  color: var(--teal-dark);
+  background: var(--accent-soft);
+  color: var(--accent-dark);
   font-size: 10px;
   font-weight: 700;
 }
@@ -434,7 +434,7 @@ h1 {
 
 .stock-status {
   margin: auto 0 12px;
-  color: var(--teal-dark);
+  color: var(--accent-dark);
   font-size: 10px;
   font-weight: 600;
 }
@@ -464,7 +464,7 @@ h1 {
 }
 
 .button-add:not(:disabled):hover {
-  background: var(--teal-dark);
+  background: var(--accent-dark);
 }
 
 .button-add:disabled {
@@ -492,7 +492,7 @@ h1 {
   margin: 0;
   padding: 19px 13px;
   border-radius: 11px;
-  background: #f6f9f8;
+  background: #f6f8fb;
   color: var(--muted);
   font-size: 12px;
   line-height: 1.6;
@@ -511,7 +511,7 @@ h1 {
   justify-content: space-between;
   gap: 10px;
   padding: 13px 0;
-  border-bottom: 1px solid #edf0ef;
+  border-bottom: 1px solid #edf1f5;
 }
 
 .cart-line-info {
@@ -560,8 +560,8 @@ h1 {
 }
 
 .quantity-button:hover {
-  border-color: #9fc9c2;
-  background: #f3faf8;
+  border-color: #a9c2ed;
+  background: #f3f7ff;
 }
 
 .line-quantity {
@@ -604,7 +604,7 @@ h1 {
 }
 
 .discount-row strong {
-  color: var(--teal-dark);
+  color: var(--accent-dark);
 }
 
 .cart-grand-total {
